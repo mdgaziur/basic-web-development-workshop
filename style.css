@@ -1,0 +1,186 @@
+* {
+	font-family: "Inter", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	letter-spacing: -3px;
+	padding: 15px;
+}
+h2 {
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: -2.5px;
+	padding: 10px;
+}
+h3 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: -2px;
+	padding: 5px;
+}
+p {
+	padding: 15px;
+	font-weight: 600;
+	letter-spacing: -1px;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+a {
+    color: inherit;
+}
+code {
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 20px;
+    background: #404040;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+code.big {
+    display: flex;
+    padding: 1rem;
+}
+code pre {
+    font-family: monospace;
+}
+.header {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #1d1d1d;
+	color: white;
+}
+
+.introduction {
+	background: #e9e9e9;
+	color: rgb(66, 66, 66);
+	padding: 2rem;
+	display: flex;
+}
+.tech-logo {
+	width: 100px;
+}
+.techs {
+	background: #d1d1d1;
+	color: rgb(66, 66, 66);
+	padding: 2rem;
+}
+.tech-cards-container {
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+}
+.tech-card {
+	background: rgb(34, 34, 34);
+	padding: 1rem;
+	border-radius: 15px;
+	color: #e7e7e7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 300px;
+	height: 500px;
+	margin-left: 1rem;
+	box-shadow: 0px 2px 15px 15px rgba(0, 0, 0, 0.219);
+}
+.tech-card p {
+	font-size: 1rem;
+	color: #acacac;
+}
+.html {
+	background: #e9e9e9;
+	color: rgb(66, 66, 66);
+	padding: 2rem;
+    display: flex;
+}
+.html h1 {
+    min-width: 500px;
+}
+.css {
+	background: rgb(121, 121, 121);
+	color: rgb(235, 235, 235);
+	padding: 2rem;
+	display: flex;
+}
+.css h1 {
+    min-width: 500px;
+}
+.js {
+	background: #e9e9e9;
+	color: rgb(66, 66, 66);
+	padding: 2rem;
+	display: flex;
+}
+.js h1 {
+    min-width: 500px;
+}
+table, td {
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+}
+td {
+    padding: 15px 5px 15px 5px;
+    width: max-content;
+    margin: 0;
+}
+.ide {
+	background: #1d1d1d;
+	color: rgb(204, 204, 204);
+    padding: 2rem;
+}
+.ide-area {
+    display: flex;
+    height: 800px;
+    padding: 1rem;
+}
+.code-area-container {
+    flex: 1;
+    padding: 1rem;
+    position: relative;
+}
+#code-area {
+    font-size: 1.5rem;
+    font-family: monospace;
+    outline: none;
+    background: #454545;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#preview {
+    flex: 1;
+    margin: 1rem;
+    background: white;
+}
+button {
+    font-size: 1rem;
+    width: 100px;
+    padding: 5px 10px 5px 10px;
+    background: #5a5a5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    outline: none;
+    transition: 100ms;
+}
+button:active {
+    background: #4a4a4a;
+}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Workshop Presentation</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Welcome to this workshop!</h1>
+			<h2>Subject: Basic Web Development</h2>
+		</div>
+		<div class="introduction">
+			<h1>What is web development?</h1>
+			<p>
+				Web development is the work involved into designing a website
+				for the internet. It can range from designing simple static
+				webpage based on plaintext to complex Web-based enterprise grade
+				web applications, electronic services, social networks etc.
+				<br />
+				<br />
+				A web developer may work on designing a webpage, engineer it,
+				make suitable server to host that webpage. He/she may work on
+				server and network security configuration also.
+				<br />
+				<br />
+				Web development usually refers to writing the markup and codes
+				for a website.
+			</p>
+		</div>
+		<div class="techs">
+			<h1>Technologies for web development</h1>
+			<div class="tech-cards-container">
+				<div class="tech-card">
+					<img
+						class="tech-logo"
+						src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2017%2F07%2FHTML5_badge.png&f=1&nofb=1"
+						alt="html5-logo"
+					/>
+					<h2>HTML</h2>
+					<p>
+						HTML or Hypertext Markup Language is a language to
+						define the structure of a webpage.
+					</p>
+				</div>
+				<div class="tech-card">
+					<img
+						class="tech-logo"
+						src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmaxcdn.icons8.com%2FShare%2Ficon%2FLogos%2Fcss31600.png&f=1&nofb=1"
+						alt="html5-logo"
+					/>
+					<h2>CSS</h2>
+					<p>
+						CSS is a stylesheet language used to define the styles
+						of the elements in a webpage. Example: Setting the
+						background of a button to black
+					</p>
+				</div>
+				<div class="tech-card">
+					<img
+						class="tech-logo"
+						src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F6%2F6a%2FJavaScript-logo.png%2F220px-JavaScript-logo.png&f=1&nofb=1"
+						alt="html5-logo"
+					/>
+					<h2>Javascript</h2>
+					<p>
+						Javascript is a programming language used to define the
+						logics of a webpage. As an example, defining what would
+						happen when a button is clicked.
+					</p>
+				</div>
+			</div>
+			<p>
+				Note: These are the most basic technologies for web development.
+				Developers use more technologies such as SCSS(stylesheet
+				language), Typescript etc for making better webpages.
+			</p>
+		</div>
+		<div class="html">
+			<h1>HTML - HyperText Markup Language</h1>
+			<div>
+				<p>
+					As I said earlier, HTML is a language for defining the
+					structure of a webpage. Developers use it to tell browsers
+					to render which elements. As an example, a developer may use
+					html to show some buttons and texts in the browser.
+				</p>
+				<h2>The basics of HTML</h2>
+				<p>
+					HTML follows a tag like syntax. Which means that, to define
+					an element we use tags. HTML starts with the
+					<code>&lt;html&gt;</code> tag and ends with
+					<code>&lt;/html&gt;</code> tag. As you can see, we add
+					<code>/</code>
+					before the tag name to close that. Then we add
+					<code>&lt;head&gt;</code> tag and add tags for title of the
+					webpage, linking stylesheets, scripts etc. Then we close
+					that by typing <code>&lt;/head&gt;</code>. Now comes the
+					<code>&lt;body&gt;</code> tag where we define the elements
+					which will be visible in the browser. Like buttons, headers,
+					etc. Like before, we close that tag by typing
+					<code>&lt;/body&gt;</code>.
+				</p>
+				<h2>Some basic elements in a page</h2>
+				<h3>Buttons</h3>
+				<p>
+					The <code>&lt;button&gt;</code> tag is used to add buttons
+					in a webpage. A simple button with a text "Click me" may
+					have a source code like this
+					<code>&lt;button&gt;Click&nbsp;me&lt;/button&gt;</code>.
+				</p>
+				<h3>Headers</h3>
+				<p>
+					In html, there are headers with 6 different size. The
+					biggest header have the <code>&lt;h1&gt;</code> tag while
+					the smallest have the <code>&lt;h6&gt;</code> tag. A simple
+					header may have a source code like this
+					<code>&lt;h1&gt;I&#39;m&nbsp;a&nbsp;header&lt;/h1&gt;</code
+					>.
+				</p>
+				<h3>Paragraphs</h3>
+				<p>
+					We define paragraphs using the <code>&lt;p&gt;</code> tag.
+					We then write the contents inside those tags.
+				</p>
+				<h2>Attributes</h2>
+				<p>
+					HTML elements has some attributes which is used for certain
+					operations like getting the element from css, setting the
+					location when a hyperlink is pressed etc. Attributes values
+					are typed inside the starting tag. Like following:<br />
+					<code
+						>&lt;a href="https://google.com"&gtGoogle
+						Website&lt;/a&gt;</code
+					>
+					Attributes like <code>class</code>, <code>id</code> are used
+					to give elements a different identity. Which is convenient
+					when getting those elements from the html body.
+					<code>class</code> attribute can be used with many different
+					elements where <code>id</code> attribute can only be used in
+					one element in html body. Both attributes can be used in the
+					same elements at the same time.
+				</p>
+				<h2>Simple HTML Example</h2>
+				<code class="big">
+					<pre>
+&lt;html&gt;
+&lt;head&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Simple&nbsp;Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&nbsp;href=&quot;https://google.com&quot;&gt;Google&nbsp;Website&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;class=&quot;welcome&#45;button&nbsp;big&#45;button&quot;&gt;Button&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Biggest&nbsp;Header&lt;/h1&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Smaller&nbsp;Header&lt;/h2&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;More&nbsp;Smaller&nbsp;Header&lt;/h3&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;More&nbsp;More&nbsp;Smaller&nbsp;Header&lt;/h4&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;More&nbsp;More&nbsp;More&nbsp;Smaller&nbsp;Header&lt;/h5&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;Smallest&nbsp;Header&lt;/h6&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                    </pre>
+				</code>
+
+				<br />
+				<br />
+				Learn more about html at this link:
+				<a href="https://www.youtube.com/watch?v=pQN-pnXPaVg"
+					>https://www.youtube.com/watch?v=pQN-pnXPaVg</a
+				>
+			</div>
+		</div>
+		<div class="css">
+			<h1>CSS - Cascading Style Sheet</h1>
+			<div>
+				<p>
+					Cascading style sheet is a way we define the style of an
+					element. CSS is added to a webpage using
+					<code>&lt;style&gt;</code> tag and writing css code in it or
+					adding it from another file using the
+					<code>&lt;link&gt;</code> tag like this
+					<code
+						>&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;[STYLESHEET_FILE_NAME]&quot;&nbsp;/&gt;</code
+					>. The syntax for css is like the following:
+				</p>
+				<code class="big">
+					<pre>
+[html tag name/tag class name/tag id name] {
+    [property]: [value];
+}</pre
+					>
+				</code>
+				<h2>Common Properties and their jobs</h2>
+				<table>
+					<thead>
+						<tr>
+							<td>Property</td>
+							<td>Job</td>
+							<td>Example</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><code>background</code></td>
+							<td>
+								Sets the background color/image of a given
+								element.
+							</td>
+							<td>
+								<code>background: white;</code>
+								<code>background: url('image.jpg');</code>
+							</td>
+						</tr>
+						<tr>
+							<td><code>color</code></td>
+							<td>Sets the text color of a given element.</td>
+							<td><code>color: black;</code></td>
+						</tr>
+						<tr>
+							<td><code>height</code></td>
+							<td>Sets the height of given element</td>
+							<td><code>height: 100px;</code></td>
+						</tr>
+						<tr>
+							<td><code>width</code></td>
+							<td>Sets the width of a given element.</td>
+							<td><code>width: 100px;</code></td>
+						</tr>
+						<tr>
+							<td><code>border</code></td>
+							<td>Sets the border style of a given element.</td>
+							<td><code>border: 1px solid red;</code></td>
+						</tr>
+						<tr>
+							<td><code>font-family</code></td>
+							<td>
+								Sets the font of the text of a given element.
+							</td>
+							<td><code>font-family: 'Inter';</code></td>
+						</tr>
+						<tr>
+							<td><code>font-size</code></td>
+							<td>
+								Sets the size of the text of a given element.
+							</td>
+							<td><code>font-size: 10px;</code></td>
+						</tr>
+					</tbody>
+				</table>
+				<h2>Simple CSS Example</h2>
+				<code class="big">
+					<pre>
+button // button element
+{
+    font-family: 'Inter';
+    color: white;
+    background: black;
+}
+.header // header class
+{
+    height: 100px;
+    color: white;
+    background: black;
+}
+#logo // element with id "logo"
+{
+    background: url('logo.png');
+    width: 100px;
+}
+</pre
+					>
+				</code>
+				<br />
+				<br />
+				To learn more about css, check this tutorial:
+				<a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc"
+					>https://www.youtube.com/watch?v=1Rs2ND1ryYc</a
+				>
+			</div>
+		</div>
+		<div class="js">
+			<h1>JS - JavaScript</h1>
+			<div>
+				<p>
+					Javascript is a programming language which is used to make
+					servers, define logics of a webpage etc. It's the main
+					programming language used to define the logics in a webpage.
+					If you know any other programming languages, it won't be
+					very hard to learn Javascript.
+				</p>
+				<h2>Including in HTML</h2>
+				<p>
+					JS code can be included in the html using
+					<code>&lt;script&gt;</code> tag and directly writing the
+					source code inside it. Or, in cleaner way, it can be inluded
+					from .js file using <code>src</code> attribute of that tag.
+				</p>
+				<h2>Using Javascript to show alert when a button is pressed</h2>
+				<p>
+					We can create a javascript function and set it's name as the
+					value as the <code>onClick</code> attribute of an html
+					button. When it's pressed, the function get's called. And
+					then the function calls <code>alert()</code> function with
+					the text in it.
+				</p>
+				<code class="big">
+					<pre>
+&lt;html&gt;
+&lt;head&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Button&nbsp;onClick&nbsp;alert&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onClick=&quot;sayHello()&quot;&gt;Say&nbsp;Hello&lt;/button&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;sayHello()&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&quot;Hello!&quot;);
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre
+					>
+				</code>
+				<br />
+				<br />
+				Learn Javascript at
+				<a href="https://www.youtube.com/watch?v=PkZNo7MFNFg"
+					>https://www.youtube.com/watch?v=PkZNo7MFNFg</a
+				>
+			</div>
+		</div>
+		<div class="ide">
+			<h1>Try running code here :3</h1>
+			<div class="ide-area">
+				<div class="code-area-container">
+					<textarea id="code-area"></textarea>
+					<button onclick="updateIframe()">Run</button>
+				</div>
+				<iframe id="preview"></iframe>
+			</div>
+		</div>
+	</body>
+</html>
